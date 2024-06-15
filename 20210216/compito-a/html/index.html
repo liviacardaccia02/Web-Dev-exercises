@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="POST">
+      <fieldset>
+        <legend>Anagrafica</legend>
+        <label for="name">Nome:</label><br />
+        <input type="text" name="name" id="name" /><br />
+        <label for="surname">Cognome:</label><br />
+        <input type="text" name="surname" id="surname" /><br />
+        <label for="birth">Anno di nascita</label><br />
+        <input type="date" name="birth" id="birth" /><br />
+      </fieldset>
+      <fieldset>
+        <legend>Prenotazione</legend>
+        <p>Tipo di prestazione:</p>
+        <label for="medication1">Tampone</label>
+        <input type="checkbox" name="medication1" id="medication1" /><br />
+        <label for="medication2">Sierologico</label>
+        <input type="checkbox" name="medication2" id="medication2" /><br />
+        <label for="medication3">Vaccino</label>
+        <input type="checkbox" name="medication3" id="medication3" /><br />
+        <p>Luogo:</p>
+        <input type="radio" name="pharmacy" id="pharmacy" />
+        <label for="pharmacy">Farmacia</label><br />
+        <input type="radio" name="doctor" id="doctor" />
+        <label for="doctor">Medico di famiglia</label><br />
+        <input type="radio" name="clinic" id="clinic" />
+        <label for="clinic">Ambulatorio</label><br />
+        <input type="radio" name="hospital" id="hospital" />
+        <label for="hospital">Ospedale</label><br />
+      </fieldset>
+      <label for="submit" hidden>Submit</label>
+      <input id="submit" type="submit" value="Submit" />
+      <label for="reset" hidden>Reset</label>
+      <input id="reset" type="reset" value="Cancella" />
+    </form>
+  </body>
+</html>
