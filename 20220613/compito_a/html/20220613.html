@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="GET">
+      <fieldset name="booksFieldset">
+        <legend>Seleziona i titoli:</legend>
+        <input type="checkbox" id="book1" name="book1" value="book1" />
+        <label for="book1">
+          Sistemi operativi. Concetti ed esempi, di Abraham Silberschatz et
+          al.</label
+        ><br />
+        <input type="checkbox" id="book2" name="book2" value="book2" />
+        <label for="book2">
+          Linguaggi di programmazione. Principi e paradigmi, di Maurizio
+          Gabbrielli e Simone Martini</label
+        ><br />
+        <input type="checkbox" id="book3" name="book3" value="book3" />
+        <label for="book3">
+          I moderni sistemi operativi, di Andrew Tanenbaum</label
+        ><br />
+        <input type="checkbox" id="book4" name="book4" value="book4" />
+        <label for="book4">
+          Fondamenti di reti di calcolatori, di Andrew Tanenbaum</label
+        ><br />
+      </fieldset>
+      <fieldset name="format">
+        <legend>Scegli la copertina:</legend>
+        <input type="radio" id="flexible" name="format" value="flexible" />
+        <label for="flexible">Copertina flessibile</label><br />
+        <input type="radio" id="hard" name="format" value="nonFlexible" />
+        <label for="hard">Copertina rigida</label><br />
+        <input type="radio" id="electronic" name="format" value="electronic" />
+        <label for="electronic">Formato elettronico</label><br />
+      </fieldset>
+      <fieldset name="delivery">
+        <legend>Inserisci i tuoi dati per la consegna:</legend>
+        <label for="name">Nome:</label><br />
+        <input type="text" id="name" name="name" /><br />
+        <label for="surname">Cognome:</label><br />
+        <input type="text" id="surname" name="surname" /><br />
+        <label for="street">Via:</label><br />
+        <input type="text" id="street" name="street" /><br />
+        <label for="streetno">Numero civico:</label><br />
+        <input type="text" id="streetno" name="streetno" /><br />
+        <label for="city">Città:</label><br />
+        <input type="text" id="city" name="city" /><br />
+        <label for="province">Provincia:</label><br />
+        <input type="text" id="province" name="province" /><br />
+        <label for="cap">CAP:</label><br />
+        <input type="text" id="cap" name="cap" /><br />
+        <p>Orario flessibile:</p>
+        <input type="radio" name="time" id="flexibleTime" />
+        <label for="flexibleTime">Sì</label>
+        <input type="radio" name="time" id="nonFlexibleTime" />
+        <label for="nonFlexibleTime">No</label>
+      </fieldset>
+      <label for="submit" hidden>Submit</label>
+      <input id="submit" type="submit" value="Invia" />
+      <label for="delete" hidden>Delete</label>
+      <input id="delete" type="reset" value="Annulla" />
+    </form>
+  </body>
+</html>
