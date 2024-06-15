@@ -1,3 +1,10 @@
+<?php
+require_once ("database.php");
+
+$dbh = new DataBaseHelper("localhost", "root", "", "febbraio");
+
+?>
+
 <!DOCTYPE html>
 <html lang="it">
 
@@ -10,16 +17,20 @@
 <body>
     <h1>Database</h1>
     <div>
-        <?php
-        echo $_POST["chiave"];
-        echo $_POST["valore"];
+        <?php foreach ($dbh->getEntries() as $entry) {
+            echo $entry["chiave"] . " ";
+            echo $entry["valore"] . "</br>";
+        }
         ?>
     </div>
     <h1>Cookie</h1>
     <div>
-        <?php
-        echo $chiave["chiave"];
-        echo $valore["valore"];
+        <?php foreach ($_COOKIE as $key => $value) {
+            if ($key != "PHPSESSID") {
+                echo $key . " ";
+                echo $value . "</br>";
+            }
+        }
         ?>
     </div>
 </body>
