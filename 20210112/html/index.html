@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="POST">
+      <fieldset>
+        <legend>Anagrafica</legend>
+        <label for="name">Nome: </label>
+        <input type="text" name="name" id="name" /><br />
+        <label for="surname">Cognome: </label>
+        <input type="text" name="surname" id="surname" /><br />
+        <label for="age">Età: </label>
+        <input type="number" name="age" id="age" /><br />
+      </fieldset>
+      <fieldset>
+        <legend>Personalizzazione</legend>
+        <label for="longSleeve">Maniche lunge</label>
+        <input type="radio" name="longSleeve" id="longSleeve" /><br />
+        <label for="shortSleeve">Maniche corte</label>
+        <input type="radio" name="shortSleeve" id="shortSleeve" /><br />
+        <label for="sweatshirt">Felpa</label>
+        <input type="radio" name="sweatshirt" id="sweatshirt" /><br />
+        <label for="color">Colore: </label>
+        <input type="color" name="color" id="color" />
+      </fieldset>
+      <label for="submit" hidden>Submit</label>
+      <input type="submit" value="Submit" id="submit" />
+      <label for="reset" hidden>Reset</label>
+      <input type="reset" value="Cancella" id="reset" />
+    </form>
+  </body>
+</html>
