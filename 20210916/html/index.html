@@ -15,28 +15,38 @@
   <body>
     <table>
       <thead>
-        <th>inquadramento</th>
-        <th>personale</th>
-        <th>unità di personale</th>
+        <tr>
+          <th scope="col" id="inquadramento">inquadramento</th>
+          <th scope="col" id="personale">personale</th>
+          <th scope="col" id="unità">unità di personale</th>
+        </tr>
       </thead>
       <tbody>
         <tr>
-          <th rowspan="2">donne</th>
-          <th>docenti</th>
-          <td>1.782</td>
+          <th scope="rowgroup" headers="inquadramento" id="donne" rowspan="2">
+            donne
+          </th>
+          <th scope="row" headers="personale" id="donneDocenti">docenti</th>
+          <td headers="donneDocenti">1.782</td>
         </tr>
         <tr>
-          <th>amministrativi</th>
-          <td>1.012</td>
+          <th scope="row" headers="personale" id="donneAmministrativi">
+            amministrativi
+          </th>
+          <td headers="donneAmministrativi">1.012</td>
         </tr>
         <tr>
-          <th rowspan="2">uomini</th>
-          <th>docenti</th>
-          <td>1.497</td>
+          <th scope="rowgroup" headers="inquadramento" id="uomin" rowspan="2">
+            uomini
+          </th>
+          <th scope="row" headers="personale" id="docentiUomini">docenti</th>
+          <td headers="docentiUomini">1.497</td>
         </tr>
         <tr>
-          <th>amministrativi</th>
-          <td>1.246</td>
+          <th scope="row" headers="personale" id="amministrativiUomini">
+            amministrativi
+          </th>
+          <td headers="amministrativiUomini">1.246</td>
         </tr>
       </tbody>
     </table>
