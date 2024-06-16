@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2" scope="col" id="season">Stagione</th>
+          <th colspan="2" scope="colgroup" id="title">Titolo Episodio</th>
+        </tr>
+        <tr>
+          <th scope="col" headers="title" id="italianTitle">
+            Titolo in italiano
+          </th>
+          <th scope="col" headers="title" id="originalTitle">
+            Titolo Originale
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th rowspan="2" scope="rowgroup" headers="season" id="firstSeason">
+            Prima
+          </th>
+          <td headers="italianTitle">A lume di candela</td>
+          <td headers="originalTitle">The One with the Blackout</td>
+        </tr>
+        <tr>
+          <td headers="italianTitle">Uno strano ospite</td>
+          <td headers="originalTitle">The One with the Stoned Guy</td>
+        </tr>
+        <tr>
+          <th rowspan="2" scope="rowgroup" headers="season" id="secondSeason">
+            Seconda
+          </th>
+          <td headers="italianTitle">I due bulli</td>
+          <td headers="originalTitle">The One with the Bullies</td>
+        </tr>
+        <tr>
+          <td headers="italianTitle">Doppia festa per Rachel</td>
+          <td headers="originalTitle">The One with the Two Parties</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
