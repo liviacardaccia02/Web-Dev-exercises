@@ -18,34 +18,34 @@
         Appelli d'esame
       </caption>
       <tr>
-        <th>Giorno</th>
-        <th>Aula</th>
-        <th>9:00 - 10:00</th>
-        <th>10:00 - 11:00</th>
-        <th>11:00 - 12:00</th>
+        <th scope="col" id="day">Giorno</th>
+        <th scope="col" id="room">Aula</th>
+        <th scope="col" id="firstPeriod">9:00 - 10:00</th>
+        <th scope="col" id="secondPeriod">10:00 - 11:00</th>
+        <th scope="col" id="thirdPeriod">11:00 - 12:00</th>
       </tr>
       <tr>
-        <th rowspan="2">Lunedì</th>
-        <th>Aula 2.9</th>
-        <td colspan="2">Sistemi Operativi</td>
-        <td>Informatica e diritto</td>
+        <th headers="day" scope="rowgroup" id="monday" rowspan="2">Lunedì</th>
+        <th headers="room" scope="row" id="room29">Aula 2.9</th>
+        <td headers="firstPeriod" colspan="2">Sistemi Operativi</td>
+        <td headers="thirdPeriod">Informatica e diritto</td>
       </tr>
       <tr>
-        <th>Laboratorio 3.1</th>
-        <td>Reti di telecomunicazione</td>
-        <td colspan="2">Basi di dati</td>
+        <th headers="room" scope="row" id="lab31">Laboratorio 3.1</th>
+        <td headers="firstPeriod">Reti di telecomunicazione</td>
+        <td headers="secondPeriod" colspan="2">Basi di dati</td>
       </tr>
       <tr>
-        <th rowspan="2">Martedì</th>
-        <th>Aula 2.5</th>
-        <td>Programmazione</td>
-        <td>Analisi Matematica</td>
-        <td>Algoritmi e strutture dati</td>
+        <th headers="day" scope="rowgroup" id="tuesday" rowspan="2">Martedì</th>
+        <th headers="room" scope="row" id="room25">Aula 2.5</th>
+        <td headers="firstPeriod">Programmazione</td>
+        <td headers="secondPeriod">Analisi Matematica</td>
+        <td headers="thirdPeriod">Algoritmi e strutture dati</td>
       </tr>
       <tr>
-        <th>Laboratorio 3.3</th>
-        <td colspan="2">Tecnologie Web</td>
-        <td>Programmazione ad oggetti</td>
+        <th headers="room" scope="row" id="lab33">Laboratorio 3.3</th>
+        <td headers="firstPeriod" colspan="2">Tecnologie Web</td>
+        <td headers="thirdPeriod">Programmazione ad oggetti</td>
       </tr>
     </table>
   </body>
